@@ -1,0 +1,83 @@
+<!-- inventory.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Ravi Truck Sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Inventory List Section -->
+        <section id="inventory-list">
+            <h2>Our Inventory</h2>
+            <div class="inventory-filter">
+                <label for="make">Make:</label>
+                <select id="make" name="make">
+                    <option value="">All</option>
+                    <option value="Freightliner">Freightliner</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Kenworth">Kenworth</option>
+                </select>
+                <label for="model">Model:</label>
+                <select id="model" name="model">
+                    <option value="">All</option>
+                    <option value="Cascadia">Cascadia</option>
+                    <option value="VNL">VNL</option>
+                    <option value="T680">T680</option>
+                </select>
+                <label for="year">Year:</label>
+                <select id="year" name="year">
+                    <option value="">All</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                </select>
+                <button>Filter</button>
+            </div>
+            <div class="inventory-list">
+                <!-- List of trucks with images, prices, and descriptions -->
+                <div class="truck">
+                    <img src="OIP.jpeg" alt="Truck 1">
+                    <h3>2019 Freightliner Cascadia</h3>
+                    <p>$120,000</p>
+                    <p>mileage: 50,000 miles</p>
+                    <p>Engine: Detroit Diesel DD15</p>
+                    <p>Transmission: Allison 4500RDS</p>
+                </div>
+                <div class="truck">
+                    <img src="7282307600.jpg" alt="Truck 2">
+                    <h3>2020 Volvo VNL</h3>
+                    <p>$100,000</p>
+                    <p>mileage: 30,000 miles</p>
+                    <p>Engine: Volvo D13</p>
+                    <p>Transmission: Volvo I-Shift</p>
+                </div>
+                <div class="truck">
+                    <img src="img.webp" alt="Truck 3">
+                    <h3>2018 Kenworth T680</h3>
+                    <p>$90,000</p>
+                    <p>mileage: 70,000 miles</p>
+                    <p>Engine: PACCAR MX-13</p>
+                    <p>Transmission: Eaton Fuller 10-Speed</p>
+                </div>
+                <!-- Add more trucks here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Ravi Truck Sales. All rights reserved.</p>
+    </footer>
+</body>
+</html>
